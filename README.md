@@ -1,3 +1,3 @@
 # stepik_auto_tests_course
-Для курса:
+Домашние работы для курса:
 https://stepik.org/course/575/info
