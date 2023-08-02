@@ -1,12 +1,11 @@
 # Задание: оформляем тесты в стиле unittest
 import unittest
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
 
 class TestClassWT(unittest.TestCase):
     def test_wt1(self):
-        from selenium import webdriver
-        from selenium.webdriver.common.by import By
-        import time
-
         browser = webdriver.Chrome()
         browser.implicitly_wait(5)
         browser.get('http://suninjuly.github.io/registration1.html')
@@ -28,10 +27,6 @@ class TestClassWT(unittest.TestCase):
         self.assertEqual('Congratulations! You have successfully registered!', welcome_text, 'Не совпадает')
 
     def test_wt2(self):
-        from selenium import webdriver
-        from selenium.webdriver.common.by import By
-        import time
-
         browser = webdriver.Chrome()
         browser.implicitly_wait(5)
         browser.get('http://suninjuly.github.io/registration2.html')
